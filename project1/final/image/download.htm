@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BANGLARSHIKSHA :: SMS</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="https://school.banglarshiksha.gov.in/sms/templates/assets/img/fav.ico" type="image/x-icon" />
+
+    <!-- Fonts and icons -->
+    <script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                "families": ["Lato:300,400,700,900"]
+            },
+            custom: {
+                "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
+                urls: ["https://school.banglarshiksha.gov.in/sms/templates/assets/css/fonts.min.css"]
+            },
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://school.banglarshiksha.gov.in/sms/templates/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://school.banglarshiksha.gov.in/sms/templates/assets/css/atlantis.css">
+    <link rel="stylesheet" href="https://school.banglarshiksha.gov.in/sms/templates/css/custom.css">
+    <!--   Core JS Files   -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/core/popper.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/datatables/datatables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css">
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+
+
+<!-- Bootstrap Notify -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- jQuery Vector Maps -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+<!-- Google Maps Plugin -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/gmaps/gmaps.js"></script>
+
+<!-- Dropzone -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/dropzone/dropzone.min.js"></script>
+
+<!-- Fullcalendar -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/fullcalendar/fullcalendar.min.js"></script>
+
+<!-- DateTimePicker -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
+
+<!-- Bootstrap Tagsinput -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstrap Wizard -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-wizard/bootstrapwizard.js"></script>
+
+<!-- jQuery Validation -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+
+<!-- Summernote -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/summernote/summernote-bs4.min.js"></script>
+
+<!-- Select2 -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/select2/select2.full.min.js"></script>
+
+<!-- Sweet Alert -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Owl Carousel -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- Magnific Popup -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Atlantis JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/atlantis.min.js"></script>
+
+<!-- Common JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/js/common.js"></script>
+    <link rel="stylesheet" href="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/multi-select/css/multi-select.css">
+
+</head>    <body class="login">
+        <style>
+    .btn:hover,
+    .btn:focus {
+        opacity: 0.9;
+        transition: all .3s;
+    }
+
+    .selectgroup-pills .selectgroup-button {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+
+    .selectgroup.selectgroup-secondary .selectgroup-input:checked+.selectgroup-button {
+        border-color: #fff;
+        color: #ffffff;
+        background: rgb(105 98 205);
+
+    }
+
+    /* .login .login-aside {
+        padding: 10px;
+    } */
+
+    .login .wrapper.wrapper-login .container-login,
+    .login .wrapper.wrapper-login .container-signup {
+        width: 480px;
+        padding: 0px 25px;
+        border-radius: 5px;
+    }
+
+
+    /* Loading css */
+
+    .overlay {
+        right: 0px;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        background: #7a7a7a;
+        opacity: 0.5;
+        z-index: 9999;
+    }
+
+    .spinner {
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        border-width: 2px;
+        border-color: #fff;
+        border-top-color: #5400f7;
+        animation: spin 1s infinite linear;
+        border-radius: 100%;
+        border-style: solid;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+
+    .custom-template .custom-toggle{
+        width: 110px;
+        left : -110px;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    .btnext{
+        padding: 0.15rem 0.6rem;
+    }
+    .login_aside_bg{
+        background-position: center;
+    }
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div class="wrapper wrapper-login wrapper-login-full p-0">
+    <div class="login-aside w-50 d-flex flex-column align-items-center justify-content-center text-center login_aside_bg">
+    </div>
+    <div class="login-aside w-50 d-flex align-items-center justify-content-center bg-white">
+        <div id="loader" class="overlay">
+            <div class="spinner"></div>
+        </div>
+        <div class="row">
+            <div class="container container-login container-transparent animated fadeIn">
+                <div class="login-form">
+                    <p style="text-align: center;color: red;line-height: 22px;font-size: 21px;display:none;"><i class="fas fa-bell text-warning"></i> Before login, clear your BROWSER history for immediate effect on the changes done in the online system. </p>
+                <p style="text-align: center;color: red;line-height: 22px;font-size: 21px;display:none;"><i class="fas fa-bell text-warning"></i>
+                It is informed that Banglar Shiksha SMS Portal will not be available on 15/12/2022 from 11 AM to 3 PM for some urgent maintenance and augmentation. Inconvenience caused is regretted.
+                
+                </p>
+                    <!--<div class="form-group" style="background-color: yellow; display: none;"><label id="err" style="color: red;"></label></div>-->
+
+                    <div class="container text-center">
+                    <p style="text-align: left;"><img src="https://school.banglarshiksha.gov.in/sms/templates/uploads/new.gif"; style="width:50px;"></img>
+                <a href="https://youtu.be/fXYARn5f6AE" target="_blank" class="btn btn-link" style="padding: 0px;">
+                        <span class="btn-label">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        Video Tutorial Default Password Change.&nbsp;
+                    </a>
+                <p style="text-align: left;"><img src="https://school.banglarshiksha.gov.in/sms/templates/uploads/new.gif"; style="width:50px;"></img>
+                <a href="https://youtu.be/zpvriYINTJw" target="_blank" class="btn btn-link" style="padding: 0px;">
+                        <span class="btn-label">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        Video Tutorial Marks Entry 2023(Web)&nbsp;
+                    </a>
+
+                <a href="https://youtu.be/KwWbn49Id5k" target="_blank" class="btn btn-link" style="padding: 0px;">
+                        <span class="btn-label">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        Video Tutorial Marks Entry 2023(App)&nbsp;
+                    </a> 
+                     
+                    <a  href="https://play.google.com/store/apps/details?id=com.banglarshiksha.sms&pli=1" target="_blank" class="btn btn-link" style="padding: 0;">
+                        <span class="btn-label">
+                            <i class="fab fa-android"></i>
+                        </span>
+                    
+                        Download Mobile App 2023 </a>&nbsp;&nbsp;<span class="btn-label" data-toggle="tooltip" title="Please uninstall the old version app and get it from Google Playstore">
+                        <i class="fa fa-bell" style="color:#ed5463; font-size:16px;"></i>
+                        </span>
+                    
+                </p>
+
+            </div>
+                    <div class="form-group">
+                    <label class="form-label d-block" style="margin-right: 2px; margin-top:8px">Login As</label><br>
+                        <div class="selectgroup selectgroup-secondary selectgroup-pills">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="login_as" value="0" class="selectgroup-input" checked>
+                                <span class="selectgroup-button selectgroup-button-icon"><i class="icon-people"></i> Teacher</span>
+                            </label>
+                            <label class="selectgroup-item">
+                                <input type="radio" name="login_as" value="2" class="selectgroup-input">
+                                <span class="selectgroup-button selectgroup-button-icon"><i class="fas fa-building"></i> School</span>
+                            </label>
+                            <label class="selectgroup-item">
+                                <input type="radio" name="login_as" value="1" class="selectgroup-input">
+                                <span class="selectgroup-button selectgroup-button-icon"><i class="icon-people"></i> Administrator</span>
+                            </label>
+
+                        </div>
+                    </div>
+                    <div id="div_disecode" class="form-group">
+                        <label for="disecode" class="placeholder"><b>DISE Code *</b></label>
+                        <input  id="disecode" name="disecode" type="text" class="form-control" value="" required>
+                    </div>
+                    <div id="div_username" class="form-group">
+                        <label for="username" class="placeholder"><b>Username *</b></label>
+                        <input  id="username" name="username" type="text" class="form-control" value="" required>
+                    </div>
+                    <div id="div_password" class="form-group">
+                        <label for="password" class="placeholder"><b>Password *</b></label>
+                        <!--a href="#" class="link float-right">Forgot Password ?</a-->
+                        <div class="position-relative">
+                            <input  id="password" name="password" type="password" class="form-control" value="" required>
+                            <div class="show-password">
+                                <i class="icon-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 col-10 mb-3">
+                            <span id="image"><img src="https://school.banglarshiksha.gov.in/sms/captcha/1688294563.4231.jpg" width="180" height="40" style="border:0;" alt=" " /> </span>
+                        </div>
+                        <div class="col-md-1 col-2 mb-3">
+                            <a class="btn btn-primary btn-captcha" href="javascript:void(0);" title="Refresh" style="margin-top: 1px;margin-left: -7px;padding: 9px 6px;"><i class="fas fa-redo-alt fa-lg"></i></a>
+                        </div>
+                        <div class="col-md-5 col-12 mb-3">
+                            <input type="text" name="captcha" id="captcha" class="form-control" oncopy="return false" onpaste="return false" value="" autocomplete="off" placeholder="Type Captcha" required style="border-color: #3c73e9;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div style="color:red;" id="err"></div>
+                    </div>
+                    <div class="form-group" style="display: none;">
+                        <label for="academic_year_id">Academic Year</label>
+                        <select class="form-control form-control" id="academic_year_id">
+                            <option value="6">2023</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-action-d-flex mb-3">
+                        <button class="btn btn-submit btn-block btn-secondary mt-3 mt-sm-0 fw-bold">Sign In</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container text-center">
+                <p><strong>Helpline :</strong> 6289-352676 &nbsp; <strong>Email :</strong> contactschoolmanagementsystem@gmail.com</p>
+                <p><img src="https://school.banglarshiksha.gov.in/sms/templates/uploads/new.gif"; style="width:60px;"></img>
+               
+                     <a href="https://youtu.be/zpvriYINTJw" target="_blank" class="btn btn-link btnext" >
+                        <span class="btn-label">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        Video Tutorial Web (Marks Entry 2023)
+                    </a> 
+                    <a href="https://youtu.be/KwWbn49Id5k" target="_blank" class="btn btn-link btnext" >
+                        <span class="btn-label">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        Video Tutorial App (Marks Entry 2023)
+                    </a> 
+                    <a  href="https://school.banglarshiksha.gov.in/sms/#" class="btn btn-link btnext">
+                        <span class="btn-label">
+                            <i class="fab fa-android"></i>
+                        </span>
+                        Download Mobile App 2023
+                    </a>
+
+                   
+                    <a href="#" download class="btn btn-link btnext">
+                        <span class="btn-label">
+                            <i class="fas fa-file-pdf"></i>
+                        </span>
+                        Download DI User Manual
+                    </a>
+                    <a href="https://school.banglarshiksha.gov.in/sms/upload/sms_si_manual.pdf" download class="btn btn-link btnext">
+                        <span class="btn-label">
+                            <i class="fas fa-file-pdf"></i>
+                        </span>
+                        Download SI User Manual
+                    </a>
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Custom template | don't include it in your project! -->
+    <div class="custom-template">
+        <div class="title">User Manual</div>
+        <div class="custom-content">
+            
+
+            <a href="https://school.banglarshiksha.gov.in/sms/#" download class="btn btn-primary btnext mb-3">
+                <span class="btn-label">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                Download Web User Manual
+            </a>
+
+            <a href="https://school.banglarshiksha.gov.in/sms/#" download class="btn btn-primary btnext mb-3">
+                <span class="btn-label">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                Download App User Manual
+            </a>
+            <a href="https://school.banglarshiksha.gov.in/sms/#" download class="btn btn-primary btnext mb-3">
+                <span class="btn-label">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                Download Website User Manual
+            </a>
+            <a href="https://school.banglarshiksha.gov.in/sms/#" download class="btn btn-primary btnext mb-3">
+                <span class="btn-label">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                Download DI User Manual
+            </a>    
+            <a href="https://school.banglarshiksha.gov.in/sms/upload/sms_si_manual.pdf" download class="btn btn-primary btnext mb-3">
+                <span class="btn-label">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                Download SI User Manual
+            </a>
+
+            <a download="" href="https://youtu.be/zpvriYINTJw" target="_blank" class="btn btn-success btnext mb-3">
+                <span class="btn-label">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                Video Tutorial Web<br>(Marks Entry-2023)
+            </a>
+
+            <a download="" href="https://youtu.be/KwWbn49Id5k" target="_blank" class="btn btn-success btnext mb-3">
+                <span class="btn-label">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                Video Tutorial App<br>(Marks Entry-2023)
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.banglarshiksha.sms&pli=1" class="btn btn-success btnext mb-3">
+                <span class="btn-label">
+                    <i class="fab fa-android"></i>
+                </span>
+                Download Mobile App (2023)
+            </a>
+
+            <div class="custom-toggle">
+                <!-- <i class="flaticon-chain-1"></i> -->
+                User Manual
+            </div>
+        </div>
+        <!-- End Custom template -->
+    </div>
+</div>
+
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/js/login.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/js/slide-panel.js"></script>        <!--   Core JS Files   -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/core/popper.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/datatables/datatables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css">
+        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
+
+
+<!-- Bootstrap Notify -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- jQuery Vector Maps -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+<!-- Google Maps Plugin -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/gmaps/gmaps.js"></script>
+
+<!-- Dropzone -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/dropzone/dropzone.min.js"></script>
+
+<!-- Fullcalendar -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/fullcalendar/fullcalendar.min.js"></script>
+
+<!-- DateTimePicker -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
+
+<!-- Bootstrap Tagsinput -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstrap Wizard -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/bootstrap-wizard/bootstrapwizard.js"></script>
+
+<!-- jQuery Validation -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+
+<!-- Summernote -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/summernote/summernote-bs4.min.js"></script>
+
+<!-- Select2 -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/select2/select2.full.min.js"></script>
+
+<!-- Sweet Alert -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Owl Carousel -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- Magnific Popup -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/plugin/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Atlantis JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/assets/js/atlantis.min.js"></script>
+
+<!-- Common JS -->
+<script src="https://school.banglarshiksha.gov.in/sms/templates/js/common.js"></script>
+    </body>
+</html>
